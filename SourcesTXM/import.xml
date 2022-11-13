@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<import author="gilles"
+        date="27-10-21"
+        desc="&lt;pre&gt;&lt;br/&gt;- sourcestxm&lt;br/&gt;- gilles&lt;br/&gt;- 27-10-21&lt;/pre&gt;"
+        name="VILL"
+        rootDir="/home/couffi/GillesC Dropbox/gilles couffignal/BasTOR/Villeneuve/SourcesTXM"
+        script="quickLoader.groovy"
+        version="0.7">
+   <linkGrp type="align"/>
+   <corpora>
+      <corpus annotate="true"
+              cqpid="SOURCESTXM1644847102930"
+              desc="&lt;pre&gt;&lt;br/&gt;- sourcestxm&lt;br/&gt;- gilles&lt;br/&gt;- 27-10-21&lt;/pre&gt;"
+              encoding="UTF-8"
+              font=""
+              lang="fr"
+              name="VILL">
+         <tokenizer onlyThoseTests="false">
+            <param name="whitespaces">[\p{Z}\p{C}]+</param>
+            <param name="regPunct">[\p{Ps}\p{Pe}\p{Pi}\p{Pf}\p{Po}\p{S}]</param>
+            <param name="punct_strong">[.!?]+|\.\.|\.\.\.|…|\|</param>
+            <param name="regElision">['‘’]</param>
+         </tokenizer>
+         <xslt xsl=""/>
+         <pattributes/>
+         <sattributes/>
+         <biblios/>
+         <uis/>
+         <editions default="default">
+       	    <edition build_edition="true"
+                     mode="groovy"
+                     name="default"
+                     page_break_tag="pb"
+                     script="pager.groovy"
+                     words_per_page="500"/>
+         </editions>
+         <texts/>
+         <queries/>
+         <preBuild/>
+      </corpus>
+   </corpora>
+</import>
